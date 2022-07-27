@@ -2,7 +2,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:drawable="@drawable/carr"
+        android:drawable="@drawable/blue_car"
         android:bottom="3dp"
         android:left="3dp"
         android:right="3dp"
@@ -12,10 +12,8 @@
         <shape
             android:padding="10dp"
             android:shape="rectangle">
-
             <corners android:radius="10dp" />
             <stroke
-
                 android:width="3dp"
                 />
         </shape>

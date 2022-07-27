@@ -28,21 +28,17 @@ var adapter=ViewAdapter(this,icon)
     fun getAllIcon():ArrayList<Icon>{
         var icons=ArrayList<Icon>()
 
-        icons.add(Icon(R.mipmap.ic_home,false))
-        icons.add(Icon(R.mipmap.ic_car,true))
-        icons.add(Icon(R.mipmap.ic_home,true))
-        icons.add(Icon(R.mipmap.ic_car,false))
-        icons.add(Icon(R.mipmap.ic_home,true))
-        icons.add(Icon(R.mipmap.ic_home,false))
-        icons.add(Icon(R.mipmap.ic_car,true))
-        icons.add(Icon(R.mipmap.ic_home,true))
-        icons.add(Icon(R.mipmap.ic_car,false))
-        icons.add(Icon(R.mipmap.ic_home,true))
-        icons.add(Icon(R.mipmap.ic_home,false))
-        icons.add(Icon(R.mipmap.ic_car,true))
-        icons.add(Icon(R.mipmap.ic_home,true))
-        icons.add(Icon(R.mipmap.ic_car,false))
-        icons.add(Icon(R.mipmap.ic_home,true))
+        icons.add((Icon(R.drawable.home)))
+
+        icons.add((Icon(R.drawable.chick)))
+
+        icons.add((Icon(R.drawable.snowman)))
+
+        icons.add((Icon(R.drawable.olmos)))
+        icons.add((Icon(R.drawable.chick)))
+
+
+
         return icons
     }
 }
