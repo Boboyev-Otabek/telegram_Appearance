@@ -8,25 +8,29 @@ import com.example.telegram_appearance.adapter.ViewAdapter
 import com.example.telegram_appearance.model.Icon
 
 class MainActivity : AppCompatActivity() {
-    lateinit var recyclerView:RecyclerView
+    lateinit var recyclerView: RecyclerView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-    initView()
+        initView()
     }
-    fun initView(){
-        recyclerView=findViewById(R.id.recyclerview)
-        recyclerView.layoutManager=LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false)
+
+    fun initView() {
+        recyclerView = findViewById(R.id.recyclerview)
+        recyclerView.layoutManager =
+            LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
         refreshAdapter(getAllIcon())
     }
-    fun refreshAdapter(icon:ArrayList<Icon>){
-var adapter=ViewAdapter(this,icon)
-        recyclerView.adapter=adapter
+
+    fun refreshAdapter(icon: ArrayList<Icon>) {
+        var adapter = ViewAdapter(this, icon)
+        recyclerView.adapter = adapter
     }
-    fun getAllIcon():ArrayList<Icon>{
-        var icons=ArrayList<Icon>()
+
+    fun getAllIcon(): ArrayList<Icon> {
+        var icons = ArrayList<Icon>()
 
         icons.add((Icon(R.drawable.home)))
 
